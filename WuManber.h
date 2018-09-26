@@ -26,7 +26,7 @@ protected:
   bool m_bInitialized;
 
   struct structAlphabet {
-    char letter;  // letter for matching purposes
+    unsigned char letter;  // letter for matching purposes
     unsigned char offset; // index of character in offsetted alphabet for shift and hash tables
   } m_lu[256]; // defines our alphabet for matching purposes, is LookUp table of letters for pattern/text matching
   unsigned char m_nSizeOfAlphabet;
