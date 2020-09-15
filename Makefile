@@ -5,16 +5,16 @@ CFLAGS=-Wall -O2
 
 TARGET = main
 
-SRCS := $(wildcard *.cpp)  
+SRCS := $(wildcard *.cc)  
 
-OBJS := $(patsubst %cpp, %o, $(SRCS))  
+OBJS := $(patsubst %cc, %o, $(SRCS))  
 
 all: $(TARGET)  
 
 $(TARGET): $(OBJS)  
 	$(CC) $(CFLAGS) -o $@ $^
 
-%.o:%.cpp
+%.o:%.cc
 	$(CC) $(CFLAGS) -c $<
 
 clean:  
