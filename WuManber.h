@@ -12,7 +12,7 @@ class WuManber {
 		virtual ~WuManber( void );
 		void Initialize( const vector<const char *> &patterns, 
 				bool bCaseSensitive = false, bool bIncludeSpecialCharacters = false, bool bIncludeExtendedAscii = false );
-		void Search( size_t TextLength, const char *Text, const vector<const char *> &patterns );
+		void Search( size_t TextLength, const char *Text, const vector<const char *> &patterns, vector<const char *> &result );
 	protected:
 		size_t k;  // number of patterns;
 		size_t m;  // largest common pattern length

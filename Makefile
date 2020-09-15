@@ -3,7 +3,7 @@ CC = g++
 
 CFLAGS=-Wall -O2
 
-TARGET = main
+TARGET = test
 
 SRCS := $(wildcard *.cc)  
 
