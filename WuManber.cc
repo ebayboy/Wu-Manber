@@ -22,10 +22,18 @@ unsigned char WuManber::rchExtendedAscii[] = {
 	0x00 };
 
 WuManber::WuManber( void ): 
-	k( 0 ), m( 0 ), m_bInitialized( false ) {
+	k( 0 ), m( 0 ), m_bInitialized( false ), m_ShiftTable(nullptr), m_vPatternMap(nullptr) {
 	}
 
 WuManber::~WuManber( void ) {
+	if (m_ShiftTable) {
+		delete [] m_ShiftTable;
+		m_ShiftTable = nullptr;
+	}
+	if (m_vPatternMap) {
+		delete [] m_vPatternMap;
+		m_vPatternMap = nullptr;
+	}
 }
 
 void WuManber::Initialize( const vector<const char *> &patterns, 

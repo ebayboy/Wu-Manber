@@ -21,6 +21,7 @@ int main(int argc, char *argv[]) {
 
 	vector<const char*> result;
 	WuManber search;
+
 	search.Initialize( patterns );
 	search.Search( strlen( target ), target, patterns , result);
 
