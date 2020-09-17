@@ -1,0 +1,40 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+B	WuManber.h	/^  static const size_t B = 3;  \/\/ Wu Manber paper suggests B is 2 or 3 $/;"	m	class:WuManber
+CC	Makefile	/^CC = g++$/;"	m
+CFLAGS	Makefile	/^CFLAGS=-Wall -O2$/;"	m
+Initialize	WuManber.cpp	/^void WuManber::Initialize( const vector<const char *> &patterns, $/;"	f	class:WuManber
+OBJS	Makefile	/^OBJS := $(patsubst %cpp, %o, $(SRCS))  $/;"	m
+PrefixHash	WuManber.h	/^    size_t PrefixHash;  \/\/ hash of first two characters of the pattern$/;"	m	struct:WuManber::structPatternMap
+SRCS	Makefile	/^SRCS := $(wildcard *.cpp)  $/;"	m
+Search	WuManber.cpp	/^void WuManber::Search( size_t TextLength, const char *Text, const vector<const char *> &patterns ) {$/;"	f	class:WuManber
+TARGET	Makefile	/^TARGET = main$/;"	m
+WuManber	WuManber.cpp	/^WuManber::WuManber( void ): $/;"	f	class:WuManber
+WuManber	WuManber.h	/^class WuManber {$/;"	c
+ix	WuManber.h	/^    size_t ix;  \/\/ index into patterns for final comparison$/;"	m	struct:WuManber::structPatternMap
+k	WuManber.h	/^  size_t k;  \/\/ number of patterns;$/;"	m	class:WuManber
+letter	WuManber.h	/^    unsigned char letter;  \/\/ letter for matching purposes$/;"	m	struct:WuManber::structAlphabet
+m	WuManber.h	/^  size_t m;  \/\/ largest common pattern length$/;"	m	class:WuManber
+m_PatternMapElement	WuManber.h	/^  } m_PatternMapElement;  \/\/ termporary area for element storage$/;"	m	class:WuManber	typeref:struct:WuManber::structPatternMap
+m_ShiftTable	WuManber.h	/^  size_t *m_ShiftTable;  \/\/ SHIFT table$/;"	m	class:WuManber
+m_bInitialized	WuManber.h	/^  bool m_bInitialized;$/;"	m	class:WuManber
+m_lu	WuManber.h	/^  } m_lu[256]; \/\/ defines our alphabet for matching purposes, is LookUp table of letters for pattern\/text matching$/;"	m	class:WuManber	typeref:struct:WuManber::structAlphabet
+m_nBitsInShift	WuManber.h	/^  unsigned short m_nBitsInShift; \/\/ used for hashing blocks of B characters$/;"	m	class:WuManber
+m_nSizeOfAlphabet	WuManber.h	/^  unsigned char m_nSizeOfAlphabet;$/;"	m	class:WuManber
+m_nTableSize	WuManber.h	/^  size_t m_nTableSize;  \/\/ size for SHIFT and HASH tables$/;"	m	class:WuManber
+m_vPatternMap	WuManber.h	/^  vector<structPatternMap> *m_vPatternMap;$/;"	m	class:WuManber
+main	Main.cpp	/^int main(int argc, char *argv[]) $/;"	f
+offset	WuManber.h	/^    unsigned char offset; \/\/ index of character in offsetted alphabet for shift and hash tables$/;"	m	struct:WuManber::structAlphabet
+rchExtendedAscii	WuManber.cpp	/^unsigned char WuManber::rchExtendedAscii[] = { $/;"	m	class:WuManber	file:
+rchExtendedAscii	WuManber.h	/^  static unsigned char rchExtendedAscii[];$/;"	m	class:WuManber
+rchSpecialCharacters	WuManber.cpp	/^char WuManber::rchSpecialCharacters[] = { 0x21, 0x22, 0x23, 0x23, 0x24, 0x25, 0x26, 0x27, 0x28, 0x29,$/;"	m	class:WuManber	file:
+rchSpecialCharacters	WuManber.h	/^  static char rchSpecialCharacters[];$/;"	m	class:WuManber
+structAlphabet	WuManber.h	/^  struct structAlphabet {$/;"	s	class:WuManber
+structPatternMap	WuManber.h	/^  struct structPatternMap { \/\/ one struct per pattern for this hash$/;"	s	class:WuManber
+test1	Main.cpp	/^void test1()$/;"	f
+test2	Main.cpp	/^void test2()$/;"	f
+~WuManber	WuManber.cpp	/^WuManber::~WuManber( void ) {$/;"	f	class:WuManber
